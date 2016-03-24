@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F144E3A01CA0C61F0086C521 /* sniffles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F144E39F1CA0C61F0086C521 /* sniffles.jpg */; };
+		F144E3A11CA0C6240086C521 /* sniffles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F144E39F1CA0C61F0086C521 /* sniffles.jpg */; };
+		F1540D401C97F17100B7760B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1540D3F1C97F17100B7760B /* OpenGL.framework */; };
+		F1540D431C97F19000B7760B /* libGLEW.1.13.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1540D411C97F19000B7760B /* libGLEW.1.13.0.dylib */; };
+		F1540D441C97F19000B7760B /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1540D421C97F19000B7760B /* libglfw3.3.1.dylib */; };
+		F175205A1C984A4400DAB378 /* fragment-shader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F17520581C984A4400DAB378 /* fragment-shader.txt */; };
+		F175205B1C984A4400DAB378 /* vertex-shader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F17520591C984A4400DAB378 /* vertex-shader.txt */; };
+		F17520711C984A7A00DAB378 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1540D3F1C97F17100B7760B /* OpenGL.framework */; };
+		F17520721C984A8800DAB378 /* libGLEW.1.13.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1540D411C97F19000B7760B /* libGLEW.1.13.0.dylib */; };
+		F17520731C984A8800DAB378 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1540D421C97F19000B7760B /* libglfw3.3.1.dylib */; };
+		F17520741C984AA300DAB378 /* fragment-shader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F17520581C984A4400DAB378 /* fragment-shader.txt */; };
+		F17520751C984AA300DAB378 /* vertex-shader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F17520591C984A4400DAB378 /* vertex-shader.txt */; };
+		F17520761C984BED00DAB378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17520561C984A3700DAB378 /* main.m */; };
+		F17520781C984C9600DAB378 /* container.png in Resources */ = {isa = PBXBuildFile; fileRef = F17520771C984C9600DAB378 /* container.png */; };
+		F175207A1C9BAB4700DAB378 /* libsoil2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F17520791C9BAB4700DAB378 /* libsoil2.a */; };
+		F175207B1C9BD85A00DAB378 /* container.png in Resources */ = {isa = PBXBuildFile; fileRef = F17520771C984C9600DAB378 /* container.png */; };
+		F17EE89D1C97EFB4002B17D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17EE89C1C97EFB4002B17D3 /* main.m */; };
+		F1CCCBC91C97FAC900A7BD73 /* fragment-shader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1CCCBC71C97FAC900A7BD73 /* fragment-shader.txt */; };
+		F1CCCBCA1C97FAC900A7BD73 /* vertex-shader.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1CCCBC81C97FAC900A7BD73 /* vertex-shader.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F144E39F1CA0C61F0086C521 /* sniffles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sniffles.jpg; path = texture/resources/sniffles.jpg; sourceTree = "<group>"; };
+		F1540D3F1C97F17100B7760B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F1540D411C97F19000B7760B /* libGLEW.1.13.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.13.0.dylib; path = /usr/local/Cellar/glew/1.13.0/lib/libGLEW.1.13.0.dylib; sourceTree = "<absolute>"; };
+		F1540D421C97F19000B7760B /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = /usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<absolute>"; };
+		F17520561C984A3700DAB378 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = texture/source/main.m; sourceTree = "<group>"; };
+		F17520581C984A4400DAB378 /* fragment-shader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fragment-shader.txt"; path = "texture/resources/fragment-shader.txt"; sourceTree = "<group>"; };
+		F17520591C984A4400DAB378 /* vertex-shader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "vertex-shader.txt"; path = "texture/resources/vertex-shader.txt"; sourceTree = "<group>"; };
+		F17520601C984A5800DAB378 /* texture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = texture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17520771C984C9600DAB378 /* container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = container.png; path = texture/resources/container.png; sourceTree = "<group>"; };
+		F17520791C9BAB4700DAB378 /* libsoil2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsoil2.a; path = lib/libsoil2.a; sourceTree = "<group>"; };
+		F17EE8891C97EF19002B17D3 /* shader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17EE89C1C97EFB4002B17D3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
+		F1CCCBC71C97FAC900A7BD73 /* fragment-shader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fragment-shader.txt"; path = "resources/fragment-shader.txt"; sourceTree = "<group>"; };
+		F1CCCBC81C97FAC900A7BD73 /* vertex-shader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "vertex-shader.txt"; path = "resources/vertex-shader.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F175205D1C984A5800DAB378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F175207A1C9BAB4700DAB378 /* libsoil2.a in Frameworks */,
+				F17520721C984A8800DAB378 /* libGLEW.1.13.0.dylib in Frameworks */,
+				F17520731C984A8800DAB378 /* libglfw3.3.1.dylib in Frameworks */,
+				F17520711C984A7A00DAB378 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EE8861C97EF19002B17D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1540D431C97F19000B7760B /* libGLEW.1.13.0.dylib in Frameworks */,
+				F1540D441C97F19000B7760B /* libglfw3.3.1.dylib in Frameworks */,
+				F1540D401C97F17100B7760B /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1540D451C97F19900B7760B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F17520791C9BAB4700DAB378 /* libsoil2.a */,
+				F1540D3F1C97F17100B7760B /* OpenGL.framework */,
+				F1540D411C97F19000B7760B /* libGLEW.1.13.0.dylib */,
+				F1540D421C97F19000B7760B /* libglfw3.3.1.dylib */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		F17520531C984A1A00DAB378 /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				F17520551C984A2900DAB378 /* resources */,
+				F17520541C984A2200DAB378 /* source */,
+			);
+			name = texture;
+			sourceTree = "<group>";
+		};
+		F17520541C984A2200DAB378 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				F17520561C984A3700DAB378 /* main.m */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		F17520551C984A2900DAB378 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F144E39F1CA0C61F0086C521 /* sniffles.jpg */,
+				F17520771C984C9600DAB378 /* container.png */,
+				F17520581C984A4400DAB378 /* fragment-shader.txt */,
+				F17520591C984A4400DAB378 /* vertex-shader.txt */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		F17EE8681C97EE99002B17D3 = {
+			isa = PBXGroup;
+			children = (
+				F17520531C984A1A00DAB378 /* texture */,
+				F17EE88A1C97EF19002B17D3 /* shader */,
+				F1540D451C97F19900B7760B /* common */,
+				F17EE8721C97EE99002B17D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F17EE8721C97EE99002B17D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F17EE8891C97EF19002B17D3 /* shader.app */,
+				F17520601C984A5800DAB378 /* texture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F17EE88A1C97EF19002B17D3 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				F17EE89A1C97EF55002B17D3 /* source */,
+				F17EE89B1C97EF5A002B17D3 /* resources */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+		F17EE89A1C97EF55002B17D3 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				F17EE89C1C97EFB4002B17D3 /* main.m */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		F17EE89B1C97EF5A002B17D3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1CCCBC71C97FAC900A7BD73 /* fragment-shader.txt */,
+				F1CCCBC81C97FAC900A7BD73 /* vertex-shader.txt */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F175205F1C984A5800DAB378 /* texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F175206E1C984A5800DAB378 /* Build configuration list for PBXNativeTarget "texture" */;
+			buildPhases = (
+				F175205C1C984A5800DAB378 /* Sources */,
+				F175205D1C984A5800DAB378 /* Frameworks */,
+				F175205E1C984A5800DAB378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = texture;
+			productName = texture;
+			productReference = F17520601C984A5800DAB378 /* texture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F17EE8881C97EF19002B17D3 /* shader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17EE8971C97EF19002B17D3 /* Build configuration list for PBXNativeTarget "shader" */;
+			buildPhases = (
+				F17EE8851C97EF19002B17D3 /* Sources */,
+				F17EE8861C97EF19002B17D3 /* Frameworks */,
+				F17EE8871C97EF19002B17D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shader;
+			productName = shader;
+			productReference = F17EE8891C97EF19002B17D3 /* shader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F17EE8691C97EE99002B17D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "李金虎";
+				TargetAttributes = {
+					F175205F1C984A5800DAB378 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					F17EE8881C97EF19002B17D3 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = F17EE86C1C97EE99002B17D3 /* Build configuration list for PBXProject "opengl-study" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F17EE8681C97EE99002B17D3;
+			productRefGroup = F17EE8721C97EE99002B17D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F17EE8881C97EF19002B17D3 /* shader */,
+				F175205F1C984A5800DAB378 /* texture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F175205E1C984A5800DAB378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F144E3A11CA0C6240086C521 /* sniffles.jpg in Resources */,
+				F175207B1C9BD85A00DAB378 /* container.png in Resources */,
+				F17520741C984AA300DAB378 /* fragment-shader.txt in Resources */,
+				F17520751C984AA300DAB378 /* vertex-shader.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EE8871C97EF19002B17D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1CCCBC91C97FAC900A7BD73 /* fragment-shader.txt in Resources */,
+				F144E3A01CA0C61F0086C521 /* sniffles.jpg in Resources */,
+				F175205B1C984A4400DAB378 /* vertex-shader.txt in Resources */,
+				F1CCCBCA1C97FAC900A7BD73 /* vertex-shader.txt in Resources */,
+				F17520781C984C9600DAB378 /* container.png in Resources */,
+				F175205A1C984A4400DAB378 /* fragment-shader.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F175205C1C984A5800DAB378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17520761C984BED00DAB378 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EE8851C97EF19002B17D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17EE89D1C97EFB4002B17D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F175206F1C984A5800DAB378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/Users/lijinhu/Downloads/SpartanJ-soil2-afce5f882d73/src/SOIL2",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.13.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snailsea.opengl-test.texture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F17520701C984A5800DAB378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/Users/lijinhu/Downloads/SpartanJ-soil2-afce5f882d73/src/SOIL2",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.13.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snailsea.opengl-test.texture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F17EE8801C97EE99002B17D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F17EE8811C97EE99002B17D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F17EE8981C97EF19002B17D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.13.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snailsea.opengl-test.shader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F17EE8991C97EF19002B17D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.13.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snailsea.opengl-test.shader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F175206E1C984A5800DAB378 /* Build configuration list for PBXNativeTarget "texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F175206F1C984A5800DAB378 /* Debug */,
+				F17520701C984A5800DAB378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17EE86C1C97EE99002B17D3 /* Build configuration list for PBXProject "opengl-study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17EE8801C97EE99002B17D3 /* Debug */,
+				F17EE8811C97EE99002B17D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17EE8971C97EF19002B17D3 /* Build configuration list for PBXNativeTarget "shader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17EE8981C97EF19002B17D3 /* Debug */,
+				F17EE8991C97EF19002B17D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F17EE8691C97EE99002B17D3 /* Project object */;
+}
