@@ -4,18 +4,18 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <SOIL2.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+#include "Shader.h"
+#include "Util.h"
 
-const char* readShader();
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
-unsigned char* loadImageFromBundle(NSString *imageName, NSString *imageType, int *width, int *height);
 
 const GLuint WIDTH = 800, HEIGHT = 600;
 
 int main()
 {
-    const GLchar *vertexShaderSource = readShader(@"vertex-shader", @"txt");
-    const GLchar *fragmentShaderSource = readShader(@"fragment-shader", @"txt");
-    
     glfwInit();
     
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -34,40 +34,9 @@ int main()
     glewInit();
     glViewport(0, 0, WIDTH, HEIGHT);
     
-    GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShader);
-    // Check for compile time errors
-    GLint success;
-    GLchar infoLog[512];
-    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-    if (!success)
-    {
-        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-    }
-    // Fragment shader
-    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShader);
-    // Check for compile time errors
-    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-    if (!success)
-    {
-        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-    }
-    // Link shaders
-    GLuint shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    // Check for linking errors
-    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-    if (!success) {
-        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-    }
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
-    
+    // init shaders
+    GLuint shaderProgram = initShaders(@"vertex-shader", @"fragment-shader", @"txt");
+
     GLfloat vertices[] = {
         //  ---- 位置 ----     ---- 颜色 ----  ---- 纹理坐标 ----
         0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,  // 右上
@@ -163,6 +132,15 @@ int main()
         
         // Draw our first triangle
         glUseProgram(shaderProgram);
+        
+        // translate and scale with glm
+        glm::mat4 transform;
+        transform = glm::translate(transform, glm::vec3(0.2f, -0.2f, 0.0f));
+        transform = glm::rotate(transform, (GLfloat)glfwGetTime() * 1.0f, glm::vec3(0.0f, 1.0f, 1.0f));
+        
+        GLint transformLoc = glGetUniformLocation(shaderProgram, "transform");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
+        
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
@@ -183,24 +161,4 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action, int mod
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GL_TRUE);
-}
-
-const char* readShader(NSString *fileName, NSString *fileExtension)
-{
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:fileExtension];
-    NSString *testString = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-    return testString.UTF8String;
-}
-
-unsigned char* loadImageFromBundle(NSString *imageName, NSString *imageType, int *width, int *height)
-{
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:imageName ofType:imageType];
-    unsigned char* image = SOIL_load_image(filePath.UTF8String, width, height, 0, SOIL_LOAD_RGB);
-    if (image == NULL)
-    {
-        const char *result = SOIL_last_result();
-        NSLog(@"load image result:%@", [NSString stringWithUTF8String:result]);
-    }
-    
-    return image;
 }
